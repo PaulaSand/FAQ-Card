@@ -1,0 +1,152 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #6B70E6;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+}
+
+.card{
+    height: 550px;
+    background-color: white;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+    max-width: 850px;
+    width: 83%;
+}
+
+
+.imageBox {
+    height: 100%;
+    width: 580px;
+}
+
+.imageBox div {
+    overflow: hidden;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.imageBox .principalImg{
+    position: relative;
+    left:  -80px;
+}
+
+.imageBox .complementaryImg{
+    top: 50%;
+    transform: translateY(-30%);
+    left: -100px;
+    position: absolute;
+
+}
+
+
+.InformationBox {
+    padding-right: 35px;
+}
+
+.InformationBox h1{
+    margin-bottom: 10px;
+    
+}
+
+.line-question{
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: inline-flex;
+}
+
+.question{  
+    border-bottom: 1px solid grey;
+    
+}
+
+.arrow{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    border: none;
+    margin-left: auto;
+}
+
+.answer{
+    padding-bottom: 20px;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .card{
+        display:block;
+        margin-top: 34%;
+        margin-bottom: 20px;
+    padding-right: 0;
+        align-content: center;
+        width: 70%;
+        height: max-content;
+        max-width: unset;
+    }
+
+    .imageBox{
+        position: static;
+        width: 100%;
+    }
+
+    .imageBox div {
+        transform: translateY(-60%);
+        position:static ;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .imageBox .principalImg{
+        width: 80% ;
+        position: static;
+    }
+
+    .imageBox .complementaryImg{
+        top: -8%;
+        left: 9%;
+        position: absolute;
+        width: 28%;
+    
+    }
+    
+    .InformationBox{
+        padding-right: 7%;
+        padding-left:7%;
+        padding-bottom: 50px;
+        margin-top: -30%;
+    }
+    
+    .InformationBox h1{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    
+
+}
+
+
+@media screen and (max-width: 700px) {
+    .card {
+        width: 88%;
+    }
+}
